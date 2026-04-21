@@ -1,4 +1,3 @@
-# Hash Table Implementation
 Part 1: Open Addressing Hash Table
  Hash Function
 private int hash(String key) {

@@ -96,7 +96,7 @@ public class hash {
         
         // Read patient.txt and extract last names
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("patient.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("Part1/patient.txt"));
             String line;
             int lineCount = 0;
             

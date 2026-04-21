@@ -62,7 +62,7 @@ public class chainhash {
             System.out.println("Total Collisions: " + collisionCount);
             System.out.println("\nHash Table Contents:");
             System.out.println(String.format("%-10s | %-50s", "Index", "Last Names (Chain)"));
-        
+            
             
             for (int i = 0; i < tableSize; i++) {
                 if (!table[i].isEmpty()) {
@@ -107,7 +107,7 @@ public class chainhash {
         // Rehash the table 
         @SuppressWarnings("unchecked")
         public void rehash() {
-            System.out.println("\n>>> Starting Rehash Operation...");
+            System.out.println("\n Starting Rehash Operation...");
             System.out.println("    Old table size: " + tableSize);
             
             LinkedList<String>[] oldTable = table;
@@ -136,7 +136,7 @@ public class chainhash {
                 }
             }
             
-            System.out.println(">>> Rehash Complete!");
+            System.out.println(" Rehash Complete");
             System.out.println("    New table size: " + tableSize);
             System.out.println("    Collisions during rehash: " + rehashCollisions);
             
@@ -163,7 +163,7 @@ public class chainhash {
         
         // Read patient.txt and extract last names
         try {
-            BufferedReader fileReader = new BufferedReader(new FileReader("patient.txt"));
+            BufferedReader fileReader = new BufferedReader(new FileReader("part2/patient.txt"));
             String line;
             int lineCount = 0;
             
@@ -178,7 +178,7 @@ public class chainhash {
             }
             fileReader.close();
             
-            System.out.println(" Initial Loading ");
+            System.out.println("\n Initial Loading ");
             System.out.println("Read " + lineCount + " patient records");
             System.out.println("Found " + uniqueLastNames.size() + " unique last names");
             System.out.println("\nInserting last names into hash table (Size: 50):");
