@@ -23,16 +23,16 @@ public class chainhash {
             }
         }
         
-        // Hash function using Java's built-in hashCode
+        // Hash function using Java's built in hashCode
         private int hash(String key) {
             return Math.abs(key.hashCode()) % tableSize;
         }
         
-        // Insert a key into the hash table
+        // Inserts a key into the hash table
         public void insert(String key) {
             int index = hash(key);
             
-            // Check if this is a collision (chain already has items or this item exists)
+            // Check if this is a collision
             if (!table[index].isEmpty() && !table[index].contains(key)) {
                 collisionCount++;
                 System.out.println("  [COLLISION] Index: " + index + " | Inserting key: '" + key + 
@@ -41,28 +41,28 @@ public class chainhash {
                 System.out.println("  Inserted: '" + key + "' at index " + index);
             }
             
-            // Add if not already present
+            // Adds if not already present
             if (!table[index].contains(key)) {
                 table[index].add(key);
                 totalItemsInserted++;
             }
         }
         
-        // Search for a key in the hash table
+        
         public boolean search(String key) {
             int index = hash(key);
             return table[index].contains(key);
         }
         
-        // Display the hash table
+        
         public void display() {
-            System.out.println("\n=== Chaining Hash Table ===");
+            System.out.println("\n Chaining Hash Table ");
             System.out.println("Table Size: " + tableSize);
             System.out.println("Total Items: " + totalItemsInserted);
             System.out.println("Total Collisions: " + collisionCount);
             System.out.println("\nHash Table Contents:");
             System.out.println(String.format("%-10s | %-50s", "Index", "Last Names (Chain)"));
-            System.out.println("------------------------------------------------------------------");
+        
             
             for (int i = 0; i < tableSize; i++) {
                 if (!table[i].isEmpty()) {
@@ -76,9 +76,9 @@ public class chainhash {
             }
         }
         
-        // Get statistics
+        
         public void displayStats() {
-            System.out.println("\n=== Statistics ===");
+            System.out.println("\n Statistics ");
             System.out.println("Table Size: " + tableSize);
             System.out.println("Total Items Inserted: " + totalItemsInserted);
             System.out.println("Total Collisions Detected: " + collisionCount);
@@ -104,17 +104,15 @@ public class chainhash {
             System.out.println("Average Chain Length: " + String.format("%.2f", avgChainLength));
         }
         
-        // Rehash the table (double the size)
+        // Rehash the table 
         @SuppressWarnings("unchecked")
         public void rehash() {
             System.out.println("\n>>> Starting Rehash Operation...");
             System.out.println("    Old table size: " + tableSize);
             
-            // Save old table and data
             LinkedList<String>[] oldTable = table;
             int oldSize = tableSize;
             
-            // Create new table with double size
             tableSize = tableSize * 2;
             table = new LinkedList[tableSize];
             
@@ -126,7 +124,7 @@ public class chainhash {
             // Reset collision count for rehashing
             int rehashCollisions = 0;
             
-            // Re-insert all items from old table
+            // adds all items from old table
             System.out.println("    Rehashing items into new table of size " + tableSize + "...");
             for (int i = 0; i < oldSize; i++) {
                 for (String key : oldTable[i]) {
@@ -172,15 +170,15 @@ public class chainhash {
             while ((line = fileReader.readLine()) != null) {
                 lineCount++;
                 // Format: firstName, lastName, date1, date2
-                String[] parts = line.split(",");
+                String[] parts = line.split("\\s*,\\s*");
                 if (parts.length >= 2) {
-                    String lastName = parts[1].trim();
+                    String lastName = parts[1];
                     uniqueLastNames.add(lastName);
                 }
             }
             fileReader.close();
             
-            System.out.println("========== Initial Loading ==========");
+            System.out.println(" Initial Loading ");
             System.out.println("Read " + lineCount + " patient records");
             System.out.println("Found " + uniqueLastNames.size() + " unique last names");
             System.out.println("\nInserting last names into hash table (Size: 50):");
@@ -190,7 +188,7 @@ public class chainhash {
                 hashTable.insert(lastName);
             }
             
-            System.out.println("\n========== Initial Population Complete ==========");
+            System.out.println("\n Initial Population Complete ");
             hashTable.displayStats();
             
             // Interactive menu
@@ -198,13 +196,13 @@ public class chainhash {
             boolean running = true;
             
             while (running) {
-                System.out.println("\n========== MENU ==========");
+                System.out.println("\n MENU ");
                 System.out.println("1. Display Hash Table");
                 System.out.println("2. Rehash Table");
                 System.out.println("3. Quit");
                 System.out.print("Enter your choice (1-3): ");
                 
-                String choice = scanner.nextLine().trim();
+                String choice = scanner.next();
                 
                 switch (choice) {
                     case "1":
@@ -231,7 +229,7 @@ public class chainhash {
             }
             
             scanner.close();
-            
+            //handling for the same reason as in hash.java
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
         }
