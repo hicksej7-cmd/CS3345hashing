@@ -219,7 +219,7 @@ public class chainhash {
                     case "3":
                         System.out.println("\nFinal Statistics:");
                         hashTable.displayStats();
-                        System.out.println("\nGoodbye!");
+                        System.out.println("\nGoodbye");
                         running = false;
                         break;
                         

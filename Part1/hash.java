@@ -82,7 +82,7 @@ public class hash {
         
         
         public void displayStats() {
-            System.out.println("\n=== Statistics ===");
+            System.out.println("\n Statistics ");
             System.out.println("Table Size: " + tableLen);
             System.out.println("Entries Stored: " + size);
             System.out.println("Load Factor: " + String.format("%.2f%%", (size * 100.0) / tableLen));
