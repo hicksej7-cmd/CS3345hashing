@@ -1,0 +1,36 @@
+Anderson Robert,	Wong,	04/02/2021,	3/30/2022
+Arnold Belinda,	Chavez,	01/10/2021,	1/11/2022
+Atkins Anthony,	Chavez,	09/10/2021,	9/11/2022
+Baker William,	Chavez,	04/01/2021,	4/10/2022
+Barton Michael,	Chavez,	10/10/2021,	10/16/2022
+Chung Yu,	Gilbert,	07/10/2021,	
+Coombs Jean,	Gilbert,	05/01/2021,	4/10/2022
+David James,	Wong,	02/02/2021,	2/3/2022
+Earl Gary,	Gilbert,	06/03/2021,	5/10/2022
+Edwards Sam,	Gilbert,	05/21/2021,	5/22/2022
+Franklin Jason,	Wong,	09/12/2021,	9/13/2022
+Garcia Jesus,	Chavez,	10/10/2021,	
+Gent Charles,	Wong,	10/22/2021,	10/11/2022
+Griffin Sandy,	Gilbert,	06/20/2021,	6/20/2022
+Henderson Paul,	Wong,	02/15/2021,	
+Henry Sarah,	Gilbert,	04/18/2021,	4/17/2022
+Inglis Peggy,	Wong,	08/30/2021,	8/29/2022
+Jones Richard,	Gilbert,	08/01/2021,	8/10/2022
+Kennedy Fred,	Wong,	07/16/2021,	7/15/2022
+Lopez Ricky,	Wong,	03/24/2021,	3/25/2022
+Marcus Wendy,	Wong,	08/02/2021,	8/3/2022
+Mears Sally,	Wong,	05/05/2021,	
+Nathan James,	Chavez,	06/10/2021,	8/11/2022
+Osborn Janet,	Chavez,	07/10/2021,	7/11/2022
+Peterson Jerry,	Wong,	06/02/2021,	6/3/2022
+Quinn Pat,	Gilbert,	08/27/2021,	8/29/2022
+Roper Joan,	Chavez,	03/10/2021,	3/21/2022
+Rubino Ian,	Gilbert,	07/24/2021,	7/21/2022
+Sanchez Jose,	Chavez,	06/15/2021,	
+Trent Joseph,	Gilbert,	03/12/2021,	
+Tucker Matthew,	Wong,	04/10/2021,	4/11/2022
+Ulvan Rachel,	Chavez,	09/10/2021,	
+Valdez Tomas,	Gilbert,	10/15/2021,	10/10/2022
+Watson David,	Chavez,	05/03/2021,	4/28/2022
+Williams Rebbeca,	Chavez,	08/10/2021,	8/11/2022
+Young Ed,	Gilbert,	07/09/2021,	7/10/2022
