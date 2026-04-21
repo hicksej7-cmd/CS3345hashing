@@ -29,4 +29,4 @@ Each bucket in the hash table is a Linked List that can store multiple keys. Whe
 
 I included a collision count method so I could track the ammount of collisions so I could know if it was acting as expected.
 
-I did something similar to this assignment in one of my programming fundamentals courses so this was all pretty familiar. Its not outright stated in the instructions but I included a basic menu to make testing it easier. Also included comments since some things are not immediately obvious as to why they are used such as @suppresswarnings.
+I did something similar to this assignment in one of my programming fundamentals courses so this was all pretty familiar. Its not outright stated in the instructions but I included a basic menu in chainhash.java to make testing it easier. Also included comments since some things are not immediately obvious as to why they are used such as @suppresswarnings.
